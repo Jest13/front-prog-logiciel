@@ -1,0 +1,23 @@
+<h2> Meuble Stock </h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th> Nom du meuble</th>
+    <th> prix du meuble</th>
+    <th> information technique</th>
+    <th> description du meuble</th>
+    <th> type de meuble</th>
+    <th> stock de meuble</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let meuble of meubles" >
+    <td> {{ meuble.meuble_name }}</td>
+    <td> {{ meuble.meuble_prix }}</td>
+    <td> {{ meuble.meuble_info }}</td>
+    <td> {{ meuble.meuble_short_info }}</td>
+    <td> {{ meuble.meuble_type }}</td>
+    <td> {{ meuble.meuble_stock }}</td>
+  </tr>
+  </tbody>
+</table>
