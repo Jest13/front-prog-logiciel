@@ -1,5 +1,23 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <marquee behavior="alternate">
+      <img src="https://c.tenor.com/CunF35_z6B8AAAAC/mr-nagoor-babu-durga.gif" alt="" class="durga">
+    </marquee>
+    <li class="nav-item">
+      <a routerLink="meubles" routerLinkActive="active" class="nav-link">Liste de meuble</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="create-meuble" routerLinkActive="active" class="nav-link">Ajout de meuble</a>
+    </li>
+  </ul>
+</nav>
+<br>
 <h1 class="text-center"> {{title}} </h1>
 <div class="container">
-  <app-meuble-list></app-meuble-list>
+  <router-outlet></router-outlet>
 </div>
-
+<footer class="footer">
+  <div class="container">
+    <span> Tout droit reservés 2022 @CamilLeBoss</span>
+  </div>
+</footer>

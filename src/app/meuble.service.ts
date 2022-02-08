@@ -5,8 +5,10 @@ import {Meuble} from "./meuble";
 
 @Injectable({
   providedIn: 'root'
+
 })
 export class MeubleService {
+
 
   private baseURL="http://localhost:8080/api/v1/meubles";
   constructor(private httpClient: HttpClient) { }
@@ -14,4 +16,9 @@ export class MeubleService {
   getMeublesList(): Observable<Meuble[]>{
     return this.httpClient.get<Meuble[]>(`${this.baseURL}`);
   }
+
+  createMeuble(meuble: Meuble): Observable<any>{
+    return this.httpClient.post(`${this.baseURL}`, meuble);
+  }
+
 }
