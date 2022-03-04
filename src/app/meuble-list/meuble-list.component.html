@@ -8,6 +8,7 @@
     <th> description du meuble</th>
     <th> type de meuble</th>
     <th> stock de meuble</th>
+    <th> Actions </th>
   </tr>
   </thead>
   <tbody>
@@ -18,6 +19,10 @@
     <td> {{ meuble.meuble_short_info }}</td>
     <td> {{ meuble.meuble_type }}</td>
     <td> {{ meuble.meuble_stock }}</td>
+    <td>
+      <button (click)="updateMeuble(meuble.meuble_id)" class="btn btn-info">Modifier</button>
+      <button (click)="deleteMeuble(meuble.meuble_id)" class = "btn btn-danger" type="submit">Supprimer</button>
+    </td>
   </tr>
   </tbody>
 </table>

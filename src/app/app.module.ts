@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MeubleListComponent } from './meuble-list/meuble-list.component';
 import {HttpClientModule} from "@angular/common/http";
 import { CreateMeubleComponent } from './create-meuble/create-meuble.component';
+import { UpdateMeubleComponent } from './update-meuble/update-meuble.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -14,6 +15,7 @@ import { CreateMeubleComponent } from './create-meuble/create-meuble.component';
     AppComponent,
     MeubleListComponent,
     CreateMeubleComponent,
+    UpdateMeubleComponent,
   ],
   imports: [
     BrowserModule,

@@ -21,4 +21,16 @@ export class MeubleService {
     return this.httpClient.post(`${this.baseURL}`, meuble);
   }
 
+  getMeubleById(id: number): Observable<Meuble>{
+    return this.httpClient.get<Meuble>(`${this.baseURL}/${id}`);
+
+  }
+
+  updateMeuble(id: number, meuble: Meuble): Observable<Object> {
+    return this.httpClient.put(`${this.baseURL}/${id}`, meuble);
+  }
+
+  deleteMeuble(id: number): Observable<Object> {
+    return this.httpClient.delete(`${this.baseURL}/${id}`);
+  }
 }
