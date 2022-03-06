@@ -1,0 +1,43 @@
+<h3>Modifier un meuble </h3>
+<form (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label>Nom du meuble</label>
+    <input type="text" class="form-control" id="meuble_name"
+           [(ngModel)]="meuble.meuble_name" name="name">
+  </div>
+
+  <div class="form-group">
+    <label>Prix du meuble</label>
+    <input type="text" class="form-control" id="meuble_prix"
+           [(ngModel)]="meuble.meuble_prix" name="prix" >
+  </div>
+  <br>
+  <div class="form-group">
+    <label>Description du meuble</label>
+    <textarea type="text" class="form-control" id="meuble_info" rows="3"
+              [(ngModel)]="meuble.meuble_info" name="info"></textarea>
+
+  </div>
+  <br>
+  <div class="form-group">
+    <label>Mot clés</label>
+    <input type="text" class="form-control" id="meuble_short_info"
+           [(ngModel)]="meuble.meuble_short_info" name="short_name">
+  </div>
+
+  <div class="form-group">
+    <label>Type de meuble</label>
+    <input type="text" class="form-control" id="meuble_type"
+           [(ngModel)]="meuble.meuble_type" name="type">
+  </div>
+
+  <div class="form-group">
+    <label>Nombre de stock restant</label>
+    <input type="text" class="form-control" id="meuble_stock"
+           [(ngModel)]="meuble.meuble_stock" name="stock">
+  </div>
+  <br>
+  <button class = "btn btn-success" type="submit">Modifier</button>
+
+</form>
